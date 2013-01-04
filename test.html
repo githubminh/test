@@ -1,0 +1,219 @@
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head>
+	<meta charset="utf-8">
+		
+		<title>Soleil Noir 2012 | We believe in...</title>
+		<style>
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v3/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Petrona';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Petrona Regular'), local('Petrona-Regular'), url(http://themes.googleusercontent.com/static/fonts/petrona/v2/pDrKD-602Zi1pKQUQRmkaQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'), url(http://themes.googleusercontent.com/static/fonts/inconsolata/v5/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.ad{margin:25px 0 0;padding:15px 0;text-align:center}body{font-family:'Droid Sans',sans-serif;padding: 0 0 30px}#page{margin:0 auto 50px;position:relative;width:920px}h1{display:inline-block;font:500% 'Petrona',sans;font-size:500%;padding:5px 0 0}h2{font-size:150%;padding:5px 0 30px}p{padding:5px 0 0;line-height:1.25}strong{font-weight:bold;color:#7ccd60}.button{background-color:#2b91af;border-radius:10px;box-shadow:0 2px 3px rgba(0,0,0,0.3);color:#fff;cursor:pointer;display:inline-block;padding:10px 20px;text-align:center;text-decoration:none}.button.small{border-radius:15px;float:right;margin:22px 5px 0;padding:6px 15px}.button:hover{background-color:#1e1e1e}.button>span{font-size:84%}.button.bClose{border-radius:7px 7px 7px 7px;box-shadow:none;font:bold 131% sans-serif;padding:0 6px 2px;position:absolute;right:-7px;top:-7px}.example{display:block;line-height:1.25;padding:30px 110px 15px 0}.code-undefined{color:#617a61}.code-string{color:#fa8072}.code-function{color:#ffa54f}.code-int{color:#2b91af}.code-comment{color:#7ccd60}::-moz-selection{background-color:#2b91af;color:#fff;text-shadow:none}::selection{background-color:#2b91af;color:#fff;text-shadow:none}#page h1+.button{position:absolute;top:20px;right:25px}#share{position:absolute;right:18px;top:85px;width:205px}#share>div{display:inline-block}#page li{position:relative}#page ul+a{display:block;font-size:180%;margin:25px 0;text-align:center;text-decoration:none}.note{color:#c0c0c0;font-size:80%}#popup,#popup2,.bMulti{background-color:#fff;border-radius:10px 10px 10px 10px;box-shadow:0 0 25px 5px #999;color:#111;display:none;min-width:450px;padding:25px}#popup,.bMulti{min-height:250px}#popup .logo{color:#2B91AF;font: bold 325% 'Petrona',sans}#popup2 iframe{background:url('loader.gif') center center no-repeat;min-height:240px;min-width:450px}.bMulti p{font:500% 'Petrona',sans-serif;padding:45px 0 0;text-align:center}.bMulti a{left:175px;position:absolute;top:175px}.lt-ie9 .bModal{background-color:#000}
+#fade { /*--Transparent background layer--*/
+        display: none; /*--hidden by default--*/
+        background: #000;
+        position: fixed; left: 0; top: 0;
+        width: 100%; height: 100%;
+        opacity: .80;
+        z-index: 9999;
+}
+.poplight {color: black;}
+.popup_block{
+        display: none; /*--hidden by default--*/
+        background: #fff;
+        padding: 20px;
+        border: 20px solid #ddd;
+        float: left;
+        font-size: 1.2em;
+        position: fixed;
+        top: 50%; left: 50%;
+        z-index: 99999;
+        /*--CSS3 Box Shadows--*/
+        -webkit-box-shadow: 0px 0px 20px #000;
+        -moz-box-shadow: 0px 0px 20px #000;
+        box-shadow: 0px 0px 20px #000;
+        /*--CSS3 Rounded Corners--*/
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+}
+img.btn_close {
+        float: right;
+        margin: -55px -55px 0 0;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+        position: absolute;
+}
+*html .popup_block {
+        position: absolute;
+}
+*html .popup_block1 {
+        position: absolute;
+}
+.popup_block h2 {color: black;}
+.button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+.bMulti p {
+    font: 500% 'Petrona',sans-serif;
+    padding: 45px 0 0;
+    text-align: center;
+}
+.button.small {
+    border-radius: 15px 15px 15px 15px;
+    float: right;
+    margin: 22px 5px 0;
+    padding: 6px 15px;
+}
+.bMulti a {
+    left: 175px;
+    position: absolute;
+    top: 175px;
+}
+.element_to_pop_up { display:none; }
+</style> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>		
+	<script>
+$(document).ready(function(){                                                            
+    //When you click on a link with class of poplight and the href starts with a # 
+    $('a.poplight[href^=#]').click(function() {
+        var popID = $(this).attr('rel'); //Get Popup Name
+        var popURL = $(this).attr('href'); //Get Popup href to define size                
+        //Pull Query & Variables from href URL
+        var query= popURL.split('?');
+        var dim= query[1].split('&');
+        var popWidth = dim[0].split('=')[1]; //Gets the first query string value
+
+        //Fade in the Popup and add close button
+        $('#' + popID).fadeIn().css({ 'width': Number( popWidth ) }).prepend('<a href="#" class="close"><img src="close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>');                
+        //Define margin for center alignment (vertical + horizontal) - we add 80 to the height/width to accomodate for the padding + border width defined in the css
+        var popMargTop = ($('#' + popID).height() + 80) / 2;
+        var popMargLeft = ($('#' + popID).width() + 80) / 2;                
+        //Apply Margin to Popup
+        $('#' + popID).css({ 
+                'margin-top' : -popMargTop,
+                'margin-left' : -popMargLeft
+        });                
+        //Fade in Background
+        $('body').append('<div id="fade"></div>'); //Add the fade layer to bottom of the body tag.
+        $('#fade').css({'filter' : 'alpha(opacity=80)'}).fadeIn(); //Fade in the fade layer 
+        
+        return false;
+    });        
+    //Close Popups and Fade Layer
+    $('a.close, #fade').live('click', function() { //When clicking on the close or fade layer...
+              $('#fade , .popup_block').fadeOut(function() {
+                    $('#fade, a.close').remove();  
+    }); //fade them both out               
+        return false;
+    }); 
+    
+    
+});
+</script>
+
+<div id="popup_name" class="popup_block">       
+
+                  
+</div>
+<a href="#?w=730" rel="popup_name" class="poplight">Click here xem demo </a>
+<script type="text/javascript" src="js/jquery.bpopup-0.7.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('ul li span.button').click(function(){
+        $('#popup').bPopup({closeClass: 'bClose'});
+    });
+});
+
+</script>
+<script type="text/javascript">
+//$(document).ready(function(){
+    ;(function($) {
+        $(function() {
+            $('button').bind('click', function(e) {
+                e.preventDefault();
+                //$('#element_to_pop_up').css('display','block');
+                $('#element_to_pop_up').bPopup({
+                    closeClass: 'close1',
+                    follow: [false, false]
+                });
+                //$('.close1').click(function(){
+                  //  $('#element_to_pop_up').css('display','none');
+                    //$('.bModal').remove();
+                //});
+                $('a.button').click(function(){
+                    $('#popup1').bPopup({
+                        closeClass:'close2',
+                        follow: [false, false]
+                    });
+                });
+            });
+         });
+     })(jQuery);
+//});
+</script>
+    <!-- Button that triggers the popup -->
+    <button>POP IT UP</button>
+    <!-- Element to pop up -->
+    <div class="bMulti" id="element_to_pop_up">
+        <span class="button bClose close1"><span>X</span></span>
+        <a class="button small multi">Pop another up</a>
+    </div>
+    <div class="bMulti" id="popup1">
+        <span class="button bClose close2"><span>X</span></span><p>1</p>
+        <a class="button small multi">Pop another up</a>
+        <div class="content"></div>
+                 
+    </div>   
+<div class="bMulti" id="test11">
+    <span class="button"><span>X</span></span><p>2</p>
+    <a class="button small multi">Pop another up</a>
+</div>
+<div class="test" style="color:black;"> 123</div>
+<ul>
+	<li class="ad">
+		<span class="button small pop1">Pop it up</span>
+        <span class="example">
+            <strong>Example 1, default: </strong>
+            <em>Simple jQuery modal popup with default settings (Hello World popup)</em>
+        </span>
+        <pre>  $(<span class="code-string">'element_to_pop_up'</span>).bPopup();
+        </pre>
+    </li>
+</ul>
+<div id="popup">
+    <span class="button bClose"><span>X</span></span>
+    If you can't get it up use<br><span class="logo">bPopup</span>
+</div>	
+<script src="js2/jquery_002.js"></script>
+<script src="js2/jquery1.js"></script>
+<script src="js2/scripting.js"></script>
+
+
+	</body>
+</html>
